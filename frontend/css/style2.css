@@ -1,0 +1,132 @@
+html , body{margin: 0px;padding: 0px;}
+body {
+	font-size: 14px;
+	color: #4a4a4a;
+}
+ul{margin: 0px;padding: 0px;}
+li{
+	cursor: pointer;
+	list-style: none;
+}
+
+.fade{
+	opacity: 0;
+	display: none;
+}
+
+.fade.in {
+    opacity: 1;
+    display: block;
+}
+
+.wapper{
+	width: 100%;
+}
+
+.main{
+	width: 90%;
+	margin: auto;
+}
+
+.clear{clear: both;}
+.fl-l{float: left;}
+.fl-r{float:right;}
+.mar-b20{
+	margin-bottom: 20px;
+}
+
+/*header*/
+#header{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 1px 0 0 #bababa;
+}
+/*end header*/
+
+
+/*menu*/
+#menu{
+	width: 20%;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	height: 500px;
+	display: inline-block;
+	white-space: nowrap;
+}
+/*end menu*/
+
+/*content*/
+#content{
+	width: 79%;
+	height: auto;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+/*table tab*/
+#content .table-box{
+	width: 70%;
+	box-sizing: border-box;
+	height: auto;
+}
+
+#content .detail-box{
+	width: 30%;
+	height: auto;
+}
+/*end table tab*/
+
+/*histogram tab*/
+#content .histogram-box{
+	width:100%;
+	display: flex;
+	height: auto;
+}
+
+#content .histogram-box .histogram{
+	width: 70%;
+	min-height: 400px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+}
+
+#content .histogram-box .histogram-component{
+	width: 30%;
+	height: auto;
+}
+
+#content .histogram-box .histogram-component .chart-detail-box{
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#content .histogram-box .histogram-component .histogram-objects{
+	width: 100%;
+	height: auto;
+	font-weight: bold;
+	border:1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+#content .histogram-box .histogram-component .histogram-data{
+	width: 100%;
+	height: auto;
+	font-weight: bold;
+	border:1px solid #ccc;
+}
+
+#content .histogram-box .histogram-component li.item{
+	width: 90%;
+	text-align: left;
+	margin: auto;
+}
+/*end histogram tab*/
+
+
+
+
+
+/*end content*/

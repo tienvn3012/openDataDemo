@@ -1,0 +1,40 @@
+<div class="histogram-components">
+				<div class="components-header"><i class="fa fa-puzzle-piece"></i> {{$ctrl.header}}</div>
+				<div class="components-detail">
+					<i class="fa fa-question-circle-o"></i> : label data  
+					<i class="fa fa-clock-o"></i> : data/time data  
+					<i class="fa fa-list-ol"></i> : numberic data
+				</div>
+				<ul>
+					<li class="components" draggable="true" 
+					ondragstart="drag(event)" ng-repeat="component in $ctrl.components" 
+					data-type="{{component.type}}" id="c{{$index}}" >
+						<div class="text" ng-if="component.type == 0"><i class="fa fa-question-circle-o"></i> {{component.label}}</div>
+						<div class="text" ng-if="component.type == 1"><i class="fa fa-clock-o"></i> {{component.label}}</div>
+						<div class="text" ng-if="component.type == 2"><i class="fa fa-list-ol"></i> {{component.label}}</div>
+						<div class="delete"><i class="fa fa-times"></i></div>
+					</li>
+					<!-- <li id="c2" class="components" draggable="true" 
+					ondragstart="drag(event)" data-type="0">
+						<div class="text"><i class="fa fa-question-circle-o"></i> abccas</div>
+						<div class="delete"><i class="fa fa-times"></i></div>
+					</li>
+					<li id="c3" class="components" draggable="true" 
+					ondragstart="drag(event)" data-type="0">
+						<div class="text"><i class="fa fa-clock-o"></i> abccas</div>
+						<div class="delete"><i class="fa fa-times"></i></div>
+					</li>
+					<li id="c4" class="components" draggable="true" 
+					ondragstart="drag(event)" data-type="1">
+						<div class="text"><i class="fa fa-list-ol"></i> abccas</div>
+						<div class="delete"><i class="fa fa-times"></i></div>
+					</li>
+					<li id="c5" class="components" draggable="true" 
+					ondragstart="drag(event)" data-type="1">
+						<div class="text"><i class="fa fa-list-ol"></i> abccas</div>
+						<div class="delete"><i class="fa fa-times"></i></div>
+					</li> -->
+					
+					<div class="clear"></div>
+				</ul>
+			</div>

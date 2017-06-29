@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="open-data">
+<head>
+	<title>Chart</title>
+	<link rel="stylesheet" type="text/css" href="/frontend/css/style.css">
+	<link rel="stylesheet" type="text/css" 
+	href="../../node_modules/font-awesome/css/font-awesome.css">
+		
+	<script type="text/javascript"
+	src="../../node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../js/Chart.min.js"></script>
+	<!-- <script src="../../node_modules/angular-chart.js/dist/angular-chart.min.js"></script> -->
+
+	
+	<script type="text/javascript" src="/frontend/js/app.module.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-component/histogram-component.module.js"></script>
+	
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-component/histogram-component.component.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-box.module.js"></script>
+	
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-box.component.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-objects.module.js"></script>
+	
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-objects.component.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-data.module.js"></script>
+	
+	<script type="text/javascript" src="/frontend/js/open-content/histogram-box/histogram-data.component.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/my-script.js"></script>
+</head>
+<body>
+
+<div class="wapper" >
+
+	<div id="header">
+		<div class="main">
+			<img src="../img/openpaas" />
+		</div>
+	</div>
+
+	<div id="menu" class="fl-l"></div>
+
+
+	<div id="content" class="fl-r">
+		<div class="main">
+			<histogram-component></histogram-component>
+
+			<histogram-box></histogram-box>
+
+
+		</div>
+	</div>
+
+<div class="clear"></div>
+
+
+</div>
+
+
+</body>
+</html>

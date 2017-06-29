@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="openData">
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" 
+	href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" 
+	href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/frontend/css/style2.css">
+	
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript"
+	src="/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../js/Chart.min.js"></script>
+
+
+	<script type="text/javascript" src="/frontend/js/input-data.module.js"></script>
+	<script type="text/javascript" src="/frontend/js/input-data.component.js"></script>
+	
+	<script type="text/javascript" src="/frontend/js/open-data-tab/tab.module.js"></script>
+	<script type="text/javascript" src="/frontend/js/open-data-tab/tab.component.js"></script>
+
+	<script type="text/javascript" src="/frontend/js/open-data-tab/open-data-histogram/open-histogram.module.js"></script>
+	<script type="text/javascript" src="/frontend/js/open-data-tab/open-data-histogram/open-histogram.component.js"></script>
+
+	
+
+	<script type="text/javascript" src="/frontend/js/app2.module.js"></script>
+	<script type="text/javascript" src="/frontend/js/my-script.js"></script>
+
+</head>
+<body>
+<div class="wapper">
+	<div id="header">
+		<div class="main">
+			<img src="../img/openpaas" />
+		</div>
+	</div>
+
+	<div id="menu" class="fl-l"></div>
+	<div id="content" class="fl-r">
+		<div class="main">
+			<h3>OpenData Module</h3>
+			<tab></tab>
+			
+
+			<div id="data" class="tab-pane fade in active">
+				<div class="table-box">
+					<div class="table-responsive">          
+  						<table class="table">
+						    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    						</thead>
+    						<tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>Pitt</td>
+        <td>35</td>
+        <td>New York</td>
+        <td>USA</td>
+      </tr>
+    						</tbody>
+  						</table>
+  					</div>
+				</div>
+			</div>
+
+			<open-histogram></open-histogram>
+
+
+		</div>
+	</div>
+	<div class="clear"></div>
+	
+
+	<input-data></input-data>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<div id="chart1" class="tab-pane fade">
+				<div class="histogram-box">
+					<div class="histogram" id="histogram">
+						<canvas id="chart"></canvas>
+					</div>
+					<div class="histogram-component">
+						<div class="main">
+							<div class="chart-detail-box">
+								Type of graphic : 
+								<select class="form-control" disabled>
+									<option selected>Bar chart</option>
+								</select>
+							</div>
+
+							<div class="histogram-objects">
+								 Label : 
+								<ul>
+									<!-- <li class="item">
+										<label ><i class="fa fa-clock-o"></i> Day <input ng-change = "$ctrl.click($ctrl.abc)" ng-model="$ctrl.check" type="checkbox" name="" /></label>
+									</li>
+									<li class="item">
+										<label><input type="checkbox" name="" /> Year</label>
+									</li> -->
+									<li class="item" ng-repeat="object in $ctrl.objects">
+										<label><input type="checkbox" name="" /> {{object.label}}</label>
+									</li><!--demo but not running-->
+								</ul>
+							</div>
+
+
+							<div class="histogram-data">
+								 Series : 
+								<ul>
+									<li class="item">
+										<label><input type="checkbox" name="" /> Apple</label>
+									</li>
+									<li class="item">
+										<label><input type="checkbox" name="" /> Orange</label>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<button ng-click="$ctrl.click()">click</button>

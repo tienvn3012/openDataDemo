@@ -1,0 +1,179 @@
+html , body{margin: 0px;padding: 0px;}
+body {
+	font-size: 14px;
+	color: #4a4a4a;
+}
+ul{margin: 0px;padding: 0px;}
+li{
+	cursor: pointer;
+	list-style: none;
+}
+
+
+
+.wapper{
+	width: 100%;
+}
+
+.main{
+	width: 90%;
+	margin: auto;
+}
+
+.clear{clear: both;}
+.fl-l{float: left;}
+.fl-r{float:right;}
+.drop{width: 100%;min-height: 100px;}
+
+/*header*/
+#header{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 1px 0 0 #bababa;
+}
+/*end header*/
+
+/*menu*/
+#menu{
+	width: 20%;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+	height: 500px;
+	display: inline-block;
+	white-space: nowrap;
+}
+/*end menu*/
+
+/*content*/
+#content{
+	width: 79%;
+	height: auto;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+#content .histogram-components{
+	margin-top: 20px;
+	width: 80%;
+	height: auto;
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+	min-height: 50px;
+}
+
+#content .histogram-components .components-header{
+	width: 100%;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	text-indent: 1%;
+	text-align: left;
+}
+#content .histogram-components .components-detail{
+	width: 100%;
+	margin-top: 5px;
+	text-indent: 2%;
+	text-align: left;
+	color: #9b9b9b;
+}
+
+#content .histogram-components li.components{
+	width: auto;
+	padding: 5px;
+	border: 1px solid #4a4a4a;
+	border-radius: 4px;
+	margin-left: 5%;
+	margin-top: 10px;
+	display: inline-block;
+	margin-bottom: 10px;
+	display: flex;
+	float: left;
+}
+
+#content li.components .text{
+	width: auto;
+	max-width: 100px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline;
+    font-weight: bold;
+}
+#content li.components .delete{
+	width: 20px;
+	display: inline-block;
+}
+#content li.components .delete:hover{
+	color: red;
+}
+
+#content .histogram-box{
+	width: 100%;
+	margin-top: 20px;
+}
+#content .histogram-box .histogram-drop{
+	width: 29%;
+	float: left;
+
+}
+
+#content .histogram-box .histogram-drop .histogram-objects{
+	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+
+
+#content .histogram-box .histogram-drop .histogram-data{
+	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-top: 30px;
+}
+
+#content .histogram-box .histogram-drop .drop-header{
+	width: 100%;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	text-indent: 1%;
+	text-align: left;
+}
+
+#content .histogram-box .histogram-drop .drop-detail{
+	width: 100%;
+	margin-top: 5px;
+	text-indent: 3%;
+	text-align: left;
+	color: #9b9b9b;
+}
+
+#content .histogram-box .histogram-drop li.components{
+	width: auto;
+	padding: 5px;
+	border: 1px solid #4a4a4a;
+	border-radius: 4px;
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	margin-left: 20px;
+	white-space: nowrap;
+}
+
+
+
+#content .histogram-box .histogram{
+	width: 70%;
+	float: right;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+
+/*end content*/
